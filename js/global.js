@@ -13,18 +13,3 @@ const byId = id => document.getElementById(id);
 const click = (id, cb) => byId(id).addEventListener('click', (e) => {
     cb(e);
 });
-
-// dont touch this, it makes the loading screen work
-setTimeout(() => {
-    byId('loading').classList.add('opacity-0');
-    setTimeout(() => {
-        byId('loading').style.display = 'none';
-    }, 500);
-}, 1000);
-
-setTimeout(() => {
-    byId('cnloadhide').style.display = 'none';
-    setTimeout(() => {
-        byId('cnloadhide').style.display = 'block';
-    }, 500);
-}, 1000);

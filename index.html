@@ -8,37 +8,39 @@
     <script src="js/global.js"></script>
     <script src="js/sortable.js"></script>
     <link rel="stylesheet" href="css/global.css">
-    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"JaydenDev",utcoffset:"-6"}))};sessionStorage.setItem("_swa","1");</script>
+    <script>
+        if (!sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol + "//" + location.host) !== 0) {
+            fetch("https://counter.dev/track?" + new URLSearchParams({
+                referrer: document.referrer,
+                screen: screen.width + "x" + screen.height,
+                user: "JaydenDev",
+                utcoffset: "-6"
+            }))
+        };
+        sessionStorage.setItem("_swa", "1");
+    </script>
 </head>
 
 <body>
-    <!-- loading screen -->
-    <div id="loading">
-        <h1>Loading...</h1>
-    </div>
-    <div id="cnloadhide">
-        <nav>
-            <ul>
-                <h1>JaydenDev</h1>
-            </ul>&nbsp;&nbsp;&nbsp;
-            <ul>
-                <li>
-                    <h1><a href="https://github.com/JaydenDev">GitHub</a></h1>
-                </li>
-                <li><a href="player.htm">Player</a></li>
-            </ul>
-        </nav>
-        <div id="content">
-            <h1>I'm JaydenDev</h1>
-            <p>I code things</p>
-            <br>
-            <hr>
-            <br>
-            <h1>Projects</h1>
-            <div id="gh-cards">
-                <a href="https://github.com/JaydenDev/Catalyst"><img src="https://gh-card.dev/repos/JaydenDev/Catalyst.svg"></a>
-                <a href="https://github.com/JaydenDev/AuraPad"><img src="https://gh-card.dev/repos/JaydenDev/AuraPad.svg"></a>
-            </div>
+    <nav>
+        <ul>
+            <h1>JaydenDev</h1>&nbsp;
+            <li>
+                <h1><a href="https://github.com/JaydenDev">GitHub</a></h1>
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1>I'm JaydenDev</h1>
+        <p>I code things</p>
+        <br>
+        <hr>
+        <br>
+        <h1>Projects</h1>
+        <div style="display: flex;" id="gh-cards">
+            <a href="https://github.com/JaydenDev/Catalyst"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/Catalyst.svg"></a>&nbsp;
+            <a href="https://github.com/JaydenDev/AuraPad"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/AuraPad.svg"></a>&nbsp;
+            <a href="https://github.com/JaydenDev/jaydendev.github.io"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/jaydendev.github.io.svg"></a>&nbsp;
         </div>
     </div>
 </body>

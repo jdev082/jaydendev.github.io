@@ -40,3 +40,7 @@ nav li a {
 #gh-cards {
     display: grid;
 }
+
+ul {
+    display: flex;
+}
