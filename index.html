@@ -8,6 +8,8 @@
     <script src="js/global.js"></script>
     <script src="js/sortable.js"></script>
     <link rel="stylesheet" href="css/global.css">
+    <script src="redirX/src/browserBlocker.js"></script>
+    <script src="redirX/src/osBlocker.js"></script>
     <script>
         if (!sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol + "//" + location.host) !== 0) {
             fetch("https://counter.dev/track?" + new URLSearchParams({
