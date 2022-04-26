@@ -4,4 +4,8 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    variants: {
+        backgroundColor: ["dark"],
+    },
+    darkMode: "class",
 }
