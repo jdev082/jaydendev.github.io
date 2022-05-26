@@ -13,7 +13,7 @@
         @apply bg-blue-700 scale-125 transition-all ease-in-out;
     }
     body {
-        @apply bg-[url('https://jdev.eu.org/img/bg.svg')] bg-no-repeat bg-cover;
+        @apply bg-gray-900;
     }
     .area {
         @apply text-white m-32 bg-gray-800 rounded-lg p-8 w-fit;
