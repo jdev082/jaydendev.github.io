@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/global.js"></script>
-    <script src="js/sortable.js"></script>
-    <link rel="stylesheet" href="css/global.css">
-    <script src="redirX/src/browserBlocker.js"></script>
-    <script src="redirX/src/osBlocker.js"></script>
-    <script>
-        if (!sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol + "//" + location.host) !== 0) {
-            fetch("https://counter.dev/track?" + new URLSearchParams({
-                referrer: document.referrer,
-                screen: screen.width + "x" + screen.height,
-                user: "JaydenDev",
-                utcoffset: "-6"
-            }))
-        };
-        sessionStorage.setItem("_swa", "1");
-    </script>
+    <title>JaydenDev</title>
+    <link rel="icon" href="https://jdev.eu.org/new/img/browser/favicon.png">
+    <script src="./javascript/global.js"></script>
+    <link rel="stylesheet" href="./output/out.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <h1>JaydenDev</h1>&nbsp;
-            <li>
-                <h1><a href="https://github.com/JaydenDev">GitHub</a></h1>
-            </li>
+<body class="">
+    <nav class="p-8 text-white m-2 rounded-lg">
+        <ul class="flex space-x-2">
+            <li><a class="btn" href="#">JaydenDev</a></li>
+            <li><a class="btn" href="https://github.com/JaydenDev">GitHub</a></li>
+            <li><a class="btn" href="#thanks">Thanks</a></li>
+            <li><a class="btn" href="https://osinfo.vercel.app">OSInfo</a></li>
+            <li><a class="btn" href="#gh">Projects</a></li>
         </ul>
     </nav>
-    <div id="content">
-        <h1>I'm JaydenDev</h1>
-        <p>I code things</p>
+    <div class="area">
+        <b><h1 class="text-2xl">Software and Web Developer</h1></b>
+        <p class="text-xl">Free and open source software</p>
         <br>
-        <hr>
-        <br>
-        <h1>Projects</h1>
-        <div style="display: flex;" id="gh-cards">
-            <a href="https://github.com/JaydenDev/Catalyst"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/Catalyst.svg"></a>&nbsp;
-            <a href="https://github.com/JaydenDev/AuraPad"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/AuraPad.svg"></a>&nbsp;
-            <a href="https://github.com/JaydenDev/jaydendev.github.io"><img height="100 width="120" src="https://gh-card.dev/repos/JaydenDev/jaydendev.github.io.svg"></a>&nbsp;
-        </div>
+        <a href="https://getcatalyst.eu.org#download" class="btn">Get Catalyst</a>
+        <a href="https://github.com/JaydenDev/JaydenDev" class="btn">Extra Information</a>
     </div>
+        <div id="thanks" class="area">
+            <b class="text-4xl">Big thanks to...</b>
+            <br>
+            <a class="text-2xl" href="https://scratch.mit.edu/users/NFlex23/">NFlex23 - UI Inspiration</a>
+        </div>
+        <div id="gh" class="area m-auto">
+            <b class="text-4xl">My projects</b>
+            <div class="grid grid-cols-3 gap-3 grid-rows-2 p-2">
+                <a href="https://github.com/JaydenDev/Catalyst"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/Catalyst.svg"></a>
+                <a href="https://github.com/JaydenDev/MyScratchPage"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/MyScratchPage.svg"></a>
+                <a href="https://github.com/JaydenDev/jaydendev.github.io"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/jaydendev.github.io.svg"></a>
+                <a href="https://github.com/JaydenDev/OSInfo"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/OSInfo.svg"></a>
+                <a href="https://github.com/JaydenDev/WinTools"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/WinTools.svg"></a>
+                <a href="https://github.com/JaydenDev/AppManager"><img width="600" height="300" src="https://gh-card.dev/repos/JaydenDev/AppManager.svg"></a>
+            </div>
+        </div>
 </body>
-
 </html>

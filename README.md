@@ -1,2 +1,0 @@
-# jaydendev.github.io
-Website
