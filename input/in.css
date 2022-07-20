@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    a:hover {
+        @apply text-gray-400 underline;
+    }
+}
