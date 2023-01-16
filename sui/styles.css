@@ -1,0 +1,49 @@
+body {
+    background-color: lightgray;
+    margin: 0 0 0 0;
+    font-family: sans-serif;
+}
+
+.bar {
+    margin: 2pt 2pt 2pt 2pt;
+    background-color: gray;
+    padding: 4pt 4pt 4pt 4pt;
+}
+
+input,button{
+    padding: 2pt;
+}
+
+.userdata {
+    margin: 4pt 4pt 4pt 4pt;
+    background-color: gray;
+}
+
+.userdata span {
+    margin: 4pt 4pt 4pt 4pt;
+}
+
+.line {
+    display: flex;
+}
+
+p,span {
+    font-size: 22pt;
+}
+
+#username {
+    font-size: 32pt;
+}
+
+#footer {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 10pt !important;
+    width: 100vw;
+}
+
+#footer * {
+    margin: 2pt;
+}
