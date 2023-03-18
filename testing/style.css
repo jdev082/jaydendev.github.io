@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Simvoni;
+    src: url('./assets/Simvoni.ttf');
+}
+
+@keyframes sliding-ttb {
+    0% {
+        transform: translateY(-100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+
+:root {
+    --foreground: #22c55e;
+    --background: #111827;
+    --foreground-lighter: #86efac;
+    --font: Simvoni;
+}
+
+.theme-light {
+    --foreground: #94a3b8;
+    --foreground-lighter: #cbd5e1;
+    --background: #e2e8f0;
+}
+
+body {
+    height: 100%;
+    background: var(--background);
+    font-family: Simvoni;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: var(--foreground);
+    height: fit-content;
+    color: var(--foreground);
+    height: 48pt;
+    animation-name: sliding-ttb;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+#nav-btn {
+    display: none;
+}
+
+#branding {
+    color: white;
+    font-size: 32pt;
+    margin: 8pt;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav p, h1, h2, h3, span {
+    margin: 2pt;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 6pt;
+    border-radius: 6pt;
+    margin: 8pt;
+    width: 56pt;
+    background: var(--foreground-lighter);
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--foreground);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    #nav-btn {
+        display: inline;
+    }
+}
