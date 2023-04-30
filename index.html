@@ -4,26 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./output/out.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>jdev082</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-200">
-    <nav class="m-5">
-        <ul class="flex text-xl space-x-2">
-            <li>jdev082</li>
-            <li><a href="https://github.com/jdev082"><i class="hover:text-blue-400 transition-all fa-brands fa-github"></i></a></li>
-        </ul>
+<body class="bg-dark">
+    <div style="height: 3px;" class="m-1 progress">
+        <div class="progress-bar progress-bar-success" style="width: 100%;"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">jdev082</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jdev082">GitHub</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="m-16 w-80 h-42">
-        <p>
-            I code whatever I come with. I create simple web applications, JavaScript libraries and small programs in new languages im learning. This website is minimal by design!
-        </p>
+    <div class="m-2 alert alert-primary" role="alert">
+        This site is is in beta and powered by Bootstrap 4!
     </div>
-    <div class="fixed bottom-0 text-md p-2 w-full bg-gray-300 flex space-x-2">
-        <p class="text-md">This website's code is protected under the MIT license. Developed by jdev082 @ 2020-2022, forking allowed but modification required.</p>
+    <h3 class="text-light m-3">Some of the projects I make...</h3>
+    <div style="margin: 0 0 0 0 !important;" class="container">
+        <div class="row hidden-md-up">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <div class="card-block">
+                        <h4 class="card-title">Catalyst</h4>
+                        <h6 class="card-subtitle text-muted">Catalyst Web Browser</h6>
+                        <a href="https://getcatalyst.eu.org/#download" class="card-link">get</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <div class="card-block">
+                        <h4 class="card-title">Website</h4>
+                        <h6 class="card-subtitle text-muted">The website you are on right now!</h6>
+                        <a href="https://github.com/jdev082/JaydenDev.github.io" class="card-link">source code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+    <style>
+        .progress .progress-bar {
+            animation-name: animateBar;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: .4s;
+            height: 3px;
+        }
+
+        @keyframes animateBar {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
 </body>
 
 </html>
