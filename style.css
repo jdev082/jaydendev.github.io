@@ -125,3 +125,17 @@ button:hover, li:hover{
     margin: 18pt;
     font-size: 14pt;
 }
+
+#grid {
+    display: grid;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
